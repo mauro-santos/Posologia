@@ -7,4 +7,5 @@
     <string name="home_body">Esse aplicativo lhe auxiliará com os medicamentos e posologias que precisar administrar, podendo criar vários perfis.</string>
     <string name="btn_pessoas">Pessoas</string>
     <string name="btn_medicamentos">Medicamentos</string>
+    <string name="btn_posologias">Posologias</string>
 </resources>
