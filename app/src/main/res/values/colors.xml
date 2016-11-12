@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#1976D2</color>
     <color name="colorAccent">#CFD8DC</color>
     <color name="colorButtons">#64B5F6</color>
+
+    <color name="txtCor">#64B5F6</color>
 </resources>
 
     <!--
