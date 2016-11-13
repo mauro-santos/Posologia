@@ -1,5 +1,7 @@
 package br.com.maurosantos.android.posologia;
 
+import android.content.Intent;
+import android.database.SQLException;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,13 +10,28 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+import br.com.maurosantos.android.posologia.app.MessageBox;
+import br.com.maurosantos.android.posologia.database.DataBase;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private DataBase dataBase;
+
+    private Button btnPessoa;
+    private Button btnMedicamento;
+    private Button btnPosologia;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        btnPessoa = (Button) findViewById(R.id.btnPessoa);
+        btnMedicamento = (Button) findViewById(R.id.btnMedicamento);
+        btnPosologia = (Button) findViewById(R.id.btnPosologia);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -26,6 +43,17 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        btnPessoa.setOnClickListener(this);
+        btnMedicamento.setOnClickListener(this);
+        btnPosologia.setOnClickListener(this);
+
+        // Criar a base de dados.
+        try {
+            dataBase = new DataBase(this);
+        } catch (SQLException e) {
+            MessageBox.showAlert(this, "Erro", "Erro ao criar o banco de dados: " + e.getMessage());
+        }
     }
 
     @Override
@@ -48,5 +76,19 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v == btnPessoa) {
+            Intent it = new Intent(this, PessoaActivity.class);
+            startActivity(it);
+        } else if (v == btnMedicamento) {
+            Intent it = new Intent(this, MedicamentoActivity.class);
+            startActivity(it);
+        } else if (v == btnPosologia) {
+            Intent it = new Intent(this, PosologiaActivity.class);
+            startActivity(it);
+        }
     }
 }

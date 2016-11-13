@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import br.com.maurosantos.android.posologia.dominio.entidades.Pessoa;
+import br.com.maurosantos.android.posologia.util.DateUtils;
 
 /**
  * Created by Mauro on 12/11/2016.
@@ -52,7 +53,7 @@ public class ArrayAdapterPessoa extends ArrayAdapter<Pessoa> {
 
         viewHolder.txtCor.setBackgroundColor(context.getResources().getColor(R.color.txtCor));
         viewHolder.txtNome.setText(pessoa.getNome());
-        viewHolder.txtDataRegistro.setText(pessoa.getDataRegistro().toString());
+        viewHolder.txtDataRegistro.setText("Data de Registro: " + DateUtils.dateToString(pessoa.getDataRegistro()));
 
         return view;
     }

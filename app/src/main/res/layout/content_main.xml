@@ -30,17 +30,17 @@
         style="@style/HomeButtons">
 
         <Button
-            android:id="@+id/btnPessoas"
+            android:id="@+id/btnPessoa"
             style="@style/BtnHome"
             android:text="@string/btn_pessoas" />
 
         <Button
-            android:id="@+id/btnMedicamentos"
+            android:id="@+id/btnMedicamento"
             style="@style/BtnHome"
             android:text="@string/btn_medicamentos" />
 
         <Button
-            android:id="@+id/btnPosologias"
+            android:id="@+id/btnPosologia"
             style="@style/BtnHome"
             android:text="@string/btn_posologias" />
     </LinearLayout>

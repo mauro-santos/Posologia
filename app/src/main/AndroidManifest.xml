@@ -18,6 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PessoaActivity" />
+        <activity android:name=".MedicamentoActivity" />
+        <activity android:name=".PosologiaActivity" />
+        <activity android:name=".PessoaNewActivity"></activity>
     </application>
 
 </manifest>

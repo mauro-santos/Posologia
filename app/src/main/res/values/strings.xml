@@ -8,4 +8,9 @@
     <string name="btn_pessoas">Pessoas</string>
     <string name="btn_medicamentos">Medicamentos</string>
     <string name="btn_posologias">Posologias</string>
+
+    <string name="hint_filtro">Informe o filtro</string>
+    <string name="lbl_nome">Nome</string>
+    <string name="lbl_salvar">Salvar</string>
+    <string name="lbl_excluir">Excluir</string>
 </resources>

@@ -47,7 +47,7 @@ public class RepPessoa {
         conn.delete(Pessoa.TABELA, "_id = ?", new String[]{String.valueOf(id)});
     }
 
-    public ArrayAdapterPessoa listarContatos(Context context) {
+    public ArrayAdapterPessoa listarPessoas(Context context) {
         ArrayAdapterPessoa adpPessoas = new ArrayAdapterPessoa(context, R.layout.item_pessoa);
 
         Cursor cursor = conn.query(Pessoa.TABELA, null, null, null, null, null, null);
