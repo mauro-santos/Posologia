@@ -3,6 +3,14 @@
     <string name="action_settings">Configurações</string>
     <string name="action_about">Sobre</string>
 
+    <string name="app_title_pessoa">Lista de Pessoas</string>
+    <string name="app_title_medicamento">Lista de Medicamentos</string>
+    <string name="app_title_posologia">Lista de Horários</string>
+
+    <string name="app_title_pessoa_new">Cadastro de Pessoa</string>
+    <string name="app_title_medicamento_new">Cadastro de Medicamento</string>
+    <string name="app_title_posologia_new">Cadastro de Posologia</string>
+
     <string name="home_header">Seja bem-vindo!</string>
     <string name="home_body">Esse aplicativo lhe auxiliará com os medicamentos e posologias que precisar administrar, podendo criar vários perfis.</string>
     <string name="btn_pessoas">Pessoas</string>

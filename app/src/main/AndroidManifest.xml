@@ -18,10 +18,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PessoaActivity" />
-        <activity android:name=".MedicamentoActivity" />
-        <activity android:name=".PosologiaActivity" />
-        <activity android:name=".PessoaNewActivity"></activity>
+        <activity
+            android:name="br.com.maurosantos.android.posologia.PessoaActivity"
+            android:label="@string/app_title_pessoa" />
+        <activity
+            android:name="br.com.maurosantos.android.posologia.MedicamentoActivity"
+            android:label="@string/app_title_medicamento" />
+        <activity
+            android:name="br.com.maurosantos.android.posologia.PosologiaActivity"
+            android:label="@string/app_title_posologia" />
+        <activity
+            android:name="br.com.maurosantos.android.posologia.PessoaNewActivity"
+            android:label="@string/app_title_pessoa_new" />
     </application>
 
 </manifest>

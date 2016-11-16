@@ -9,6 +9,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <!-- The UI controls like checkboxes and text fields -->
         <item name="colorAccent">@color/colorAccent</item>
+        <!-- App color to navigation bar -->
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
