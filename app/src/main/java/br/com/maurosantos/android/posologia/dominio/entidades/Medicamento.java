@@ -70,6 +70,6 @@ public class Medicamento implements Serializable {
 
     @Override
     public String toString() {
-        return super.toString();
+        return this.Nome + " " + this.Descricao;
     }
 }

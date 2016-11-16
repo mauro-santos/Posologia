@@ -90,6 +90,6 @@ public class PessoaMedicamento implements Serializable {
 
     @Override
     public String toString() {
-        return super.toString();
+        return this.Horario + " " + this.Observacao;
     }
 }
