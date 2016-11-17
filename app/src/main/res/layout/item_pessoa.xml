@@ -6,24 +6,19 @@
 
     <TextView
         android:id="@+id/txtCor"
-        android:layout_width="48dp"
-        android:layout_height="48dp" />
+        style="@style/IconItemLista" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:orientation="vertical"
-        android:paddingTop="4dp">
+        android:id="@+id/lnlItemLista"
+        style="@style/LnlItemLista">
 
         <TextView
             android:id="@+id/txtNome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/ItemLista" />
 
         <TextView
             android:id="@+id/txtDataRegistro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/ItemLista" />
+
     </LinearLayout>
 </LinearLayout>

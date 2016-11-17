@@ -13,22 +13,16 @@
 
     <LinearLayout
         android:id="@+id/lnlNome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        style="@style/LnlCampoForm">
 
         <TextView
             android:id="@+id/lblNome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/TxtForm"
             android:text="@string/lbl_nome" />
 
         <EditText
             android:id="@+id/edtNome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName" />
+            style="@style/EdtForm" />
 
     </LinearLayout>
-
 </LinearLayout>

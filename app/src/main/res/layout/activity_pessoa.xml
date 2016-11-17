@@ -12,31 +12,21 @@
     tools:context="br.com.maurosantos.android.posologia.PessoaActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:id="@+id/lnlFiltro"
+        style="@style/LnlFiltro">
 
         <EditText
             android:id="@+id/edtFiltro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/hint_filtro"
-            android:inputType="textPersonName" />
+            style="@style/EdtFiltro" />
 
         <ImageButton
             android:id="@+id/btnAdicionar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_menu_add" />
+            style="@style/BtnMenu" />
 
     </LinearLayout>
 
     <ListView
         android:id="@+id/lstPessoas"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="11dp" />
+        style="@style/LstView" />
 
 </LinearLayout>
