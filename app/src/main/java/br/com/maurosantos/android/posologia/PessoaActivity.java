@@ -61,7 +61,7 @@ public class PessoaActivity extends AppCompatActivity implements View.OnClickLis
             edtFiltro.addTextChangedListener(filtraDados);
 
         } catch (SQLException e) {
-            MessageBox.showAlert(this, "Erro", "Erro ao conectar no banco de dados: " + e.getMessage());
+            MessageBox.showAlert(this, getResources().getString(R.string.lbl_erro), getResources().getString(R.string.lbl_erro_conexao) + ": " + e.getMessage());
         }
     }
 

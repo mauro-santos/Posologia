@@ -18,7 +18,17 @@
     <string name="btn_posologias">Posologias</string>
 
     <string name="hint_filtro">Informe o filtro</string>
+    <string name="lbl_data_registro">Data de Registro</string>
     <string name="lbl_nome">Nome</string>
+    <string name="lbl_descricao">Descrição</string>
     <string name="lbl_salvar">Salvar</string>
     <string name="lbl_excluir">Excluir</string>
+
+    <string name="lbl_atencao">Atenção</string>
+    <string name="lbl_nome_requerido">Informe o nome</string>
+    <string name="lbl_erro">Erro</string>
+    <string name="lbl_erro_salvar">Erro ao salvar os dados</string>
+    <string name="lbl_erro_excluir">Erro ao excluir os dados</string>
+    <string name="lbl_erro_criar_base">Erro ao criar o banco de dados</string>
+    <string name="lbl_erro_conexao">Erro ao conectar ao banco de dados</string>
 </resources>

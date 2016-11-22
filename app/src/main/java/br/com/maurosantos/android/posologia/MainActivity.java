@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         try {
             dataBase = new DataBase(this);
         } catch (SQLException e) {
-            MessageBox.showAlert(this, "Erro", "Erro ao criar o banco de dados: " + e.getMessage());
+            MessageBox.showAlert(this, getResources().getString(R.string.lbl_erro), getResources().getString(R.string.lbl_erro_criar_base) + ": " + e.getMessage());
         }
     }
 

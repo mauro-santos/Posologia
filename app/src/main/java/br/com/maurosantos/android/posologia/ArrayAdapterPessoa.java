@@ -53,7 +53,7 @@ public class ArrayAdapterPessoa extends ArrayAdapter<Pessoa> {
 
         viewHolder.txtCor.setBackgroundColor(context.getResources().getColor(R.color.txtCor));
         viewHolder.txtNome.setText(pessoa.getNome());
-        viewHolder.txtDataRegistro.setText("Data de Registro: " + DateUtils.dateToString(pessoa.getDataRegistro()));
+        viewHolder.txtDataRegistro.setText(context.getResources().getString(R.string.lbl_data_registro) + ": " + DateUtils.dateToString(pessoa.getDataRegistro()));
 
         return view;
     }
